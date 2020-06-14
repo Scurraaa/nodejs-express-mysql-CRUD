@@ -5,7 +5,7 @@ const connection = mysql.createConnection({
 	host: dbConfig.HOST,
 	user: dbConfig.USER,
 	password: dbConfig.PASSWORD,
-	db: dbConfig.DB
+	database: dbConfig.DB
 });
 
 connection.connect(error => {

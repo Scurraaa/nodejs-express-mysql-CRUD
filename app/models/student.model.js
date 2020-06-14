@@ -15,8 +15,7 @@ Student.create = (newStudent, result) => {
 			result(err, null);
 			return;
 		}
-		console.log(res);
-		result(null, res);
+		result(null, { message: `Student with ${newStudent.student_number} is successfully created`});
 	});
 }
 
